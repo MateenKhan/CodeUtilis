@@ -14,7 +14,7 @@ import javax.ws.rs.core.Response;
 
 import org.json.JSONException;
 
-import com.qount.JavaWebAppStructure.common.CommonUtils;
+import com.qount.JavaWebAppStructure.common.Utilities;
 import com.qount.JavaWebAppStructure.common.Constants;
 import com.qount.JavaWebAppStructure.common.PropertyManager;
 
@@ -33,7 +33,7 @@ public class ProjectVersionController {
 	@ApiOperation(value = "Returns Project Current version ", notes = "Used to to get Project Current version", responseContainer = "java.lang.String")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getProjectCurrentVersion() throws JSONException {
-		return CommonUtils.constructResponse(PropertyManager.getProperty(Constants.PROJECT_CURRENT_VERSION, null), Constants.SUCCESS_RESPONSE_CODE);
+		return Utilities.constructResponse(PropertyManager.getProperty(Constants.PROJECT_CURRENT_VERSION, null), Constants.SUCCESS_RESPONSE_CODE);
 
 	}
 

@@ -11,7 +11,7 @@ import org.json.JSONObject;
  * @author mateen
  * @version 1.0 Jun 20th 2017
  */
-public class CommonUtils {
+public class Utilities {
 
 	public static final String MESSAGE = "message";
 
