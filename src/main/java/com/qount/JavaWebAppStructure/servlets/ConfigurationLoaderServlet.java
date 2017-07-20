@@ -8,17 +8,17 @@ import com.qount.JavaWebAppStructure.common.Constants;
 import com.qount.JavaWebAppStructure.common.Log4jLoder;
 import com.qount.JavaWebAppStructure.common.MySQLManager;
 import com.qount.JavaWebAppStructure.common.PropertiesLoader;
+import com.qount.JavaWebAppStructure.common.PropertyManager;
 
 import io.swagger.jaxrs.config.BeanConfig;
 
 /**
  * 
  * @author mateen
- * @version 1.0
- * JUne 20th 2017
+ * @version 1.0 JUne 20th 2017
  */
 public class ConfigurationLoaderServlet extends HttpServlet {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -30,14 +30,14 @@ public class ConfigurationLoaderServlet extends HttpServlet {
 		loadSwaggerConfiguration(config);
 		Log4jLoder.getLog4jLoder().initilializeLogging();
 		PropertiesLoader.getPropertiesLoader().loadProjectProperties();
-		try {
-			Class.forName(MySQLManager.class.getName());
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
+		if (PropertyManager.getProperty("create.db.connection.onload").equals("true")) {
+			try {
+				Class.forName(MySQLManager.class.getName());
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
 		}
 	}
-
-	
 
 	public static void loadSwaggerConfiguration(ServletConfig config) {
 		BeanConfig beanConfig = new BeanConfig();
