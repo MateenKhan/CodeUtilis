@@ -24,7 +24,6 @@
 		<cors-filter>1.9.1</cors-filter>
 		<commons-configuration>1.10</commons-configuration>
 		<commons-dbcp2>2.1.1</commons-dbcp2>
-		<moesif-servlet>1.1.0</moesif-servlet>
 	</properties>
 
 	<repositories>
@@ -37,11 +36,6 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>com.moesif.servlet</groupId>
-			<artifactId>moesif-servlet</artifactId>
-			<version>${moesif-servlet}</version>
-		</dependency>
 
 		<!-- mysql -->
 		<dependency>
@@ -61,6 +55,7 @@
 			<version>${mysql-version}</version>
 		</dependency>
 		<!-- mysql -->
+		
 		<!-- Custom ORG json -->
 		<dependency>
 			<groupId>org.json</groupId>
@@ -164,13 +159,6 @@
 			<groupId>commons-configuration</groupId>
 			<artifactId>commons-configuration</artifactId>
 			<version>${commons-configuration}</version>
-		</dependency>
-
-		<!-- json -->
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>CustomJson</artifactId>
-			<version>LATEST</version>
 		</dependency>
 
 	</dependencies>
