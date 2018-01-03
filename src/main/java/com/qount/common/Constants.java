@@ -17,6 +17,6 @@ public class Constants {
 	// SWAGGER VARIABLES
 	public static final String SWAGGER_API_SPEC_VERSION = "1.2.3";
 	public static final String SWAGGER_API_HTTP = "https";
-	public static final String SWAGGER_API_PACKAGE = "com.qount.JavaWebAppStructure.controller";
+	public static final String SWAGGER_API_PACKAGE = "com.qount.controller";
 	public static final String PROJECT_CURRENT_VERSION = "project.current.version";
 }
