@@ -1,4 +1,4 @@
-package com.qount.JavaWebAppStructure.controller;
+package com.qount.controller;
 
 /**
  * 
@@ -14,9 +14,9 @@ import javax.ws.rs.core.Response;
 
 import org.json.JSONException;
 
-import com.qount.JavaWebAppStructure.common.Utilities;
-import com.qount.JavaWebAppStructure.common.Constants;
-import com.qount.JavaWebAppStructure.common.PropertyManager;
+import com.qount.common.Constants;
+import com.qount.common.PropertyManager;
+import com.qount.common.Utilities;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

@@ -55,7 +55,7 @@
 			<version>${mysql-version}</version>
 		</dependency>
 		<!-- mysql -->
-		
+
 		<!-- Custom ORG json -->
 		<dependency>
 			<groupId>org.json</groupId>
@@ -133,6 +133,11 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
+			<version>${log4j}</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>apache-log4j-extras</artifactId>
 			<version>${log4j}</version>
 		</dependency>
 

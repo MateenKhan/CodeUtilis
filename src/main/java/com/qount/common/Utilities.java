@@ -1,4 +1,4 @@
-package com.qount.JavaWebAppStructure.common;
+package com.qount.common;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;

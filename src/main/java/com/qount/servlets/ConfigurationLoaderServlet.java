@@ -1,14 +1,14 @@
-package com.qount.JavaWebAppStructure.servlets;
+package com.qount.servlets;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
-import com.qount.JavaWebAppStructure.common.Constants;
-import com.qount.JavaWebAppStructure.common.Log4jLoder;
-import com.qount.JavaWebAppStructure.common.MySQLManager;
-import com.qount.JavaWebAppStructure.common.PropertiesLoader;
-import com.qount.JavaWebAppStructure.common.PropertyManager;
+import com.qount.common.Constants;
+import com.qount.common.Log4jLoder;
+import com.qount.common.MySQLManager;
+import com.qount.common.PropertiesLoader;
+import com.qount.common.PropertyManager;
 
 import io.swagger.jaxrs.config.BeanConfig;
 

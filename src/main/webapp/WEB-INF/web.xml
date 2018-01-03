@@ -18,7 +18,7 @@
 	</filter-mapping>
 	<servlet>
 		<servlet-name>ConfigurationLoaderServlet</servlet-name>
-		<servlet-class>com.qount.JavaWebAppStructure.servlets.ConfigurationLoaderServlet</servlet-class>
+		<servlet-class>com.qount.servlets.ConfigurationLoaderServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet>
@@ -27,7 +27,7 @@
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
 			<param-value>
-			io.swagger.jaxrs.listing,com.qount.JavaWebAppStructure.controller
+			io.swagger.jaxrs.listing,com.qount.controller
 			</param-value>
 		</init-param>
 		<init-param>
