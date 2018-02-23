@@ -22,7 +22,7 @@
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet>
-		<servlet-name>JavaWebAppStructure</servlet-name>
+		<servlet-name>CodeUtilis</servlet-name>
 		<servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
 		<init-param>
 			<param-name>jersey.config.beanValidation.enableOutputValidationErrorEntity.server</param-name>
@@ -35,7 +35,7 @@
 		<load-on-startup>2</load-on-startup>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>JavaWebAppStructure</servlet-name>
-		<url-pattern>/*</url-pattern>
+		<servlet-name>CodeUtilis</servlet-name>
+		<url-pattern>/service/*</url-pattern>
 	</servlet-mapping>
 </web-app>

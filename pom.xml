@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.qount</groupId>
-	<artifactId>JavaWebAppStructure</artifactId>
+	<artifactId>CodeUtilis</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>JavaWebAppStructure Maven Webapp</name>
+	<name>CodeUtilis Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -178,7 +178,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>JavaWebAppStructure</finalName>
+		<finalName>CodeUtilis</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
