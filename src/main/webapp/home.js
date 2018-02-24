@@ -1,7 +1,7 @@
 var serviceUrl = window.location.protocol + "//" + window.location.host + ""+ window.location.pathname;
 var tablesUrl =  serviceUrl+ "service/data/tables"; 
 $(function() {
-	loadTables();
+//	loadTables();
 });
 
 function loadTables(){

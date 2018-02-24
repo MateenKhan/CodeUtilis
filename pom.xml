@@ -28,17 +28,14 @@
 		<httpclient>4.5.1</httpclient>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>http://nexus.bighalf.io/nexus/content/repositories/releases/</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 
-
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
 		<!-- mysql -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -59,10 +56,11 @@
 		<!-- mysql -->
 
 		<!-- Custom ORG json -->
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
-			<artifactId>CustomJson</artifactId>
-			<version>LATEST</version>
+			<artifactId>json</artifactId>
+			<version>20160810</version>
 		</dependency>
 
 		<!-- SWAGGER API SPEC DEPENDENCY LSIT -->
@@ -161,20 +159,20 @@
 			<artifactId>commons-configuration</artifactId>
 			<version>${commons-configuration}</version>
 		</dependency>
-		
+
 		<!-- Http client dependency -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>${commons-io}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>${httpclient}</version>
 		</dependency>
-		
+
 
 	</dependencies>
 	<build>
