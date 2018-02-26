@@ -1,5 +1,6 @@
 # Pull base image.
-FROM makjavaprogrammer/java8-tomcat8:2.0
+#FROM makjavaprogrammer/java8-tomcat8:2.0
+FROM tomcat:8.5.4-jre8
 MAINTAINER mateen <makjavaprogrammer@gmail.com>
 
 WORKDIR /code
