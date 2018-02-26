@@ -10,6 +10,7 @@ import javax.ws.rs.container.ResourceContext;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.ext.ContextResolver;
 
+import org.apache.log4j.Logger;
 import org.eclipse.persistence.jaxb.BeanValidationMode;
 import org.eclipse.persistence.jaxb.MarshallerProperties;
 import org.glassfish.jersey.moxy.json.MoxyJsonConfig;
@@ -20,19 +21,31 @@ import org.glassfish.jersey.server.validation.internal.InjectingConstraintValida
 
 public class MyApplication extends ResourceConfig {
 
+	
+	private static final Logger LOGGER = Logger.getLogger(MyApplication.class);
+	
     public MyApplication() {
-        packages("io.swagger.jaxrs.listing","com.qount");
+    	LOGGER.debug("registring packages");
+        packages("io.swagger.jaxrs.listing","com.qount.controller");
         // Validation.
+        LOGGER.debug("ValidationConfigurationContextResolver");
         register(ValidationConfigurationContextResolver.class);
+        LOGGER.debug("CustomLoggingFilter");
         register(CustomLoggingFilter.class);
         // Providers - JSON.
+        LOGGER.debug("MoxyJsonFeature");
         register(MoxyJsonFeature.class);
+        LOGGER.debug("io.swagger.jaxrs.listing.ApiListingResource.class, io.swagger.jaxrs.listing.SwaggerSerializers.class");
         registerClasses(io.swagger.jaxrs.listing.ApiListingResource.class, io.swagger.jaxrs.listing.SwaggerSerializers.class);
+        LOGGER.debug("MoxyJsonConfig");
         register(new MoxyJsonConfig().setFormattedOutput(true)
                 // Turn off BV otherwise the entities on server would be validated by MOXy as well.
                 .property(MarshallerProperties.BEAN_VALIDATION_MODE, BeanValidationMode.NONE)
                 .resolver());
-        System.out.println(super.getClasses());
+        LOGGER.debug(super.getClasses());
+        LOGGER.debug("**********************************************************");
+        LOGGER.debug("configuration complete");
+        LOGGER.debug("**********************************************************");
     }
     
 
