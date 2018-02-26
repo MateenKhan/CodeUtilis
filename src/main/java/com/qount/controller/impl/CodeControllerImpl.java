@@ -52,8 +52,8 @@ public class CodeControllerImpl {
 		try {
 			JSONObject requestObj = new JSONObject(json);
 			System.out.println(requestObj);
-			if(requestObj.optBoolean("java")){
-				String tableName = requestObj.optString("table");
+			String tableName = requestObj.optString("table");
+			if(StringUtils.isNotBlank(tableName)){
 				String dbName = requestObj.optString("database");
 				String pk = requestObj.optString("pk");
 				if (!StringUtils.isEmpty(pk)) {
