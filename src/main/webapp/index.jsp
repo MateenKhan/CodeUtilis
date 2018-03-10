@@ -18,7 +18,7 @@
 <body>
 	<div class="grid-x">
 		<div class="small-6 cell">
-				<h1 class="header-label" id="result"> Auto Code Generate </h1>
+				<h1 class="header-label" id="result"> Code Generate </h1>
 		</div>
 		<div class="small-6 cell">
 				<textarea id="uiFields" placeholder="input json with fields"></textarea>
