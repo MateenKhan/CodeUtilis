@@ -26,57 +26,8 @@
 	</div>
 
 	<div class="grid-x">
-		<div class="small-4 cell">
-			<table>
-				<tr>
-					<td>
-						<div class="ui-widget">
-							<label for="tags">Table: </label> 
-						</div>
-					</td>
-					<td>
-						<input id="tags">
-						<input id="table" class="hidden">
-						<span id="loadingTableMsg">loading tables...</span>
-					</td>
-				</tr>
-				<tr>
-					<td><label>Database: </label></td><td><input id="database" type="text" value="qount" readonly></td>
-				</tr>
-				<tr>
-					<td><label id="pk_div">pk: </label></td><td><input type="text" id="pk" value="id" readonly/></td>
-				</tr>
-			</table>
-			<button class="button" id="loadNewTables" onclick="loadTables()">Load New Tables</button>
-			<button class="button" id="code" onclick="downloadCode()">Generate Code</button>
-		</div>
-	
-		<div class="small-4 cell">
-			<table class="java-files-table">
-				<tr><tr><th><label class='file-header'>Java Files:</label></th><th><input id="java-check" type="checkbox" checked></th></tr>
-				<tr>
-					<td><label class='file'>Pojo:</label></td><td><input id="pojo" type="checkbox" checked></td>
-				</tr>
-				<tr>
-					<td><label class='file'>Dao:</label></td><td><input id="dao" type="checkbox" checked></td>
-				</tr>
-				<tr>
-					<td><label class='file'>DaoImpl:</label></td><td><input id="daoImpl" type="checkbox" checked></td>
-				</tr>
-				<tr>
-					<td><label class='file'>Querys:</label></td><td><input id="querys" type="checkbox" checked></td>
-				</tr>
-				<tr>
-					<td><label class='file'>Controller:</label></td><td><input id="controller" type="checkbox" checked></td>
-				</tr>
-				<tr>
-					<td><label class='file'>ControllerImpl:</label></td><td><input id="controllerImpl" type="checkbox"
-						checked>
-					</td>
-				</tr>
-			</table>
-		</div>
-		<div class="small-4 cell angular-files-table-div">
+		
+		<div class="small-12 cell angular-files-table-div">
 			<table class="angular-files-table">
 				<tr><tr><th><label class='file-header'>Angular 4 Files:</label></th><th><input id="angular-check" type="checkbox" checked></th></tr>
 				<tr>
@@ -93,6 +44,10 @@
 				</tr>
 				<tr>
 					<td><label class='file'>Html:</label></td><td><input id="html" type="checkbox" checked></td>
+				</tr>
+				
+				<tr>
+					<td> <button class="button" id="code" onclick="downloadCode()">Generate Code</button> </td>
 				</tr>
 			</table>
 		</div>
