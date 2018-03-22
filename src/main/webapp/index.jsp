@@ -16,6 +16,7 @@
 <script src="./home.js"></script>
 </head>
 <body>
+	<img src='https://d3rdwpfngw6dm1.cloudfront.net/images/logo_withtext.png'/>
 	<div class="grid-x">
 		<div class="small-6 cell">
 				<h1 class="header-label" id="result"> Code Generate </h1>
