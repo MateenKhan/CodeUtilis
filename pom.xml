@@ -50,7 +50,6 @@
 		<!-- mysql -->
 
 		<!-- Custom ORG json -->
-		<!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -177,7 +176,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin-version}</version>
 				<configuration>
-					<!-- or whatever version you use -->
 					<source>${java-version}</source>
 					<target>${java-version}</target>
 				</configuration>

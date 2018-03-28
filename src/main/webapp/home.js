@@ -3,7 +3,13 @@ var tablesUrl =  serviceUrl+ "service/data/tables";
 $(function() {
 //	loadTables();
 });
-
+function greetUser(){
+	var username = window.location.host;
+	if(username.indexOf(".qwer.win")!=-1){
+		username = username.substring(0, username.indexOf("."));
+		document.getElementById("url_user_name").innerHTML="Hello :"+username;
+	}
+}
 function loadTables(){
 	$("#loadingTableMsg").show(200);
 	$.ajax({

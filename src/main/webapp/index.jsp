@@ -15,11 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 <script src="./home.js"></script>
 </head>
-<body>
-	<img src='https://dev-oneapp.qount.io/images/logo_withtext.png'/>
+<body onload="greetUser()">
+	<h2 id='url_user_name'></h2>
 	<div class="grid-x">
 		<div class="small-6 cell">
-				<h1 class="header-label" id="result"> Code Generate </h1>
+				<h2 class="header-label" id="result"> Code Generate </h2>
 		</div>
 		<div class="small-6 cell">
 				<textarea id="uiFields" placeholder="input json with fields"></textarea>
