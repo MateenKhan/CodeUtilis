@@ -27,7 +27,8 @@
 	</div>
 
 	<div class="grid-x">
-		
+		<h1>Sample json</h1>
+		<p>{"name":"Discounts","fields":[{"name":"id","type":"String"},{"name":"name","type":"String"},{"name":"description","type":"String"},{"name":"type","type":"String"}]}</p>
 		<div class="small-12 cell angular-files-table-div">
 			<table class="angular-files-table">
 				<tr><tr><th><label class='file-header'>Angular 4 Files:</label></th><th><input id="angular-check" type="checkbox" checked></th></tr>
