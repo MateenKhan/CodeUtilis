@@ -14,7 +14,7 @@
 		<swagger-version>1.5.0</swagger-version>
 		<jersey2-version>2.23.1</jersey2-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mysql-version>6.0.4</mysql-version>
+		<mysql-version>8.0.16</mysql-version>
 		<jsch-version>0.1.54</jsch-version>
 		<javax-servlet>2.5</javax-servlet>
 		<junit>3.8.1</junit>
